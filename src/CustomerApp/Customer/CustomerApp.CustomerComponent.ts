@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Injector } from '@angular/core';
 import {Customer} from './CustomerApp.model';
+import {BaseLogger} from '../../utility/CustomerApp.Logger';
 
 @Component({
   templateUrl: './CustomerApp.CustomerView.html',
@@ -9,6 +10,13 @@ export class CustomerComponent {
   title = 'CustomerApplication';
   customerModel: Customer = new Customer();
   customerModels: Array<Customer> = new Array<Customer>();
+  logger: BaseLogger = null;
+
+  constructor(injector: Injector) {
+    this.logger = injector.get('1');
+    this.logger.log();
+  }
+
   add() {
     this.customerModels.push(this.customerModel);
     // after adding filled in customer to the array we clear the data from it

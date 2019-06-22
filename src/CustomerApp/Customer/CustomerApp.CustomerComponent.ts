@@ -17,6 +17,10 @@ export class CustomerComponent {
     this.logger.log();
   }
 
+  selectCustomer(selected: Customer) {
+    this.customerModel = selected;
+  }
+
   add() {
     this.customerModels.push(this.customerModel);
     // after adding filled in customer to the array we clear the data from it

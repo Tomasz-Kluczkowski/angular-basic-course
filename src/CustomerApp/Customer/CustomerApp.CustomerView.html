@@ -2,7 +2,8 @@
   Customer Name :<input formControlName="CustomerNameControl" [(ngModel)]="customerModel.customerName" type="text"/><br>
   Customer Code :<input formControlName="CustomerCodeControl" [(ngModel)]="customerModel.customerCode" type="text"/><br>
   Customer Amount :<input [(ngModel)]="customerModel.customerAmount" type="text" [ngModelOptions]="{standalone: true}"/><br>
-  <input [disabled]="!(customerModel.formCustomerGroup.valid)" (click)="add()" type=button value="Add"/><br>
+  <input [disabled]="!(customerModel.formCustomerGroup.valid)" (click)="add()" type=button value="Add"/>
+  <input [disabled]="disablePost" type="button" value="Send to Server" (click)="postToServer()"/>
 </form>
 {{customerModel.customerCode}}<br>
 {{customerModel.customerName}}<br>

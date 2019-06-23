@@ -1,0 +1,58 @@
+{
+  "Customers": [
+    {
+      "id": 1,
+      "customerCode": "1001",
+      "customerName": "Tom",
+      "customerAmount": "100.12"
+    },
+    {
+      "customerCode": "1002",
+      "customerName": "Mac",
+      "customerAmount": "23.45",
+      "id": 2
+    },
+    {
+      "customerCode": "1234",
+      "customerName": "Bolo",
+      "customerAmount": "12.34",
+      "id": 3
+    },
+    {
+      "customerCode": "1345",
+      "customerName": "Juzek",
+      "customerAmount": "23.09",
+      "id": 4
+    },
+    {
+      "customerCode": "3454",
+      "customerName": "wolek",
+      "customerAmount": "23.34",
+      "id": 5
+    },
+    {
+      "customerCode": "1234",
+      "customerName": "werter",
+      "customerAmount": "23.98",
+      "id": 6
+    },
+    {
+      "customerCode": "3452",
+      "customerName": "bozo",
+      "customerAmount": "23.9",
+      "id": 7
+    },
+    {
+      "customerCode": "3452",
+      "customerName": "bozo1",
+      "customerAmount": "23.9",
+      "id": 8
+    },
+    {
+      "customerCode": "1234",
+      "customerName": "testing",
+      "customerAmount": "09.0",
+      "id": 9
+    }
+  ]
+}
